@@ -10,7 +10,7 @@ interface IProps {
 export default function PostCard({ post: { title, description, date, category, path } }: IProps) {
   return (
     <Link href={`/posts/${path}`}>
-      <article className=" rounded-md bg-red-50 overflow-hidden shadow-lg">
+      <article className=" rounded-md bg-red-50 overflow-hidden shadow-md hover:shadow-xl">
         <Image
           className=" w-full"
           src={`/images/posts/${path}.png`}

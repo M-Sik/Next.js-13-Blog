@@ -14,6 +14,13 @@ body {
   height: 100vh;
   overflow-y: auto;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE and 엣지 */
+  scrollbar-width: none;  /* 파이어폭스 */
+}
 
 a {
   color: inherit;
