@@ -17,10 +17,10 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-body {
-  -ms-overflow-style: none;  /* IE and 엣지 */
-  scrollbar-width: none;  /* 파이어폭스 */
-}
+/* body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+} */
 
 a {
   color: inherit;
