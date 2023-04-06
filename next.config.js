@@ -12,6 +12,11 @@ const nextConfig = {
       },
     ],
   },
+  // ssg 정적 빌드를 위한 설정
+  output: 'export',
+  // trailingSlash: true,
+  // distDir: 'dist',
+  // assetPrefix: '.',
 };
 
 module.exports = nextConfig;
