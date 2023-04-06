@@ -6,5 +6,5 @@ module.exports = {
   },
   // calc를 사용할 수 있게 만들어준다.
   // mode: 'jit',
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
