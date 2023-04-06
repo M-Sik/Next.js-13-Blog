@@ -8,6 +8,8 @@ export const metadata = {
 };
 
 export default function Home() {
+  console.log('process.env.TEST : ', process.env.TEST);
+  console.log('process.env.NEXT_PUBLIC_TEST : ', process.env.NEXT_PUBLIC_TEST);
   return (
     <>
       <Profile />

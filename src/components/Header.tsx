@@ -6,7 +6,6 @@ import React from 'react';
 
 export default function Header() {
   const pathName = usePathname();
-  console.log(pathName);
   return (
     <header className="flex justify-between items-center p-4">
       <Link href="/">
