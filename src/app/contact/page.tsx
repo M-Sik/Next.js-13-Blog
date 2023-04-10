@@ -8,6 +8,11 @@ const LINKS = [
   { icon: <FaBlogger />, url: 'https://sikk.tistory.com/' },
 ];
 
+export const metadata = {
+  title: 'Contact Me',
+  description: 'DevSik에게 메일 보내기',
+};
+
 export default function ContactPage() {
   return (
     <section className="flex flex-col items-center">

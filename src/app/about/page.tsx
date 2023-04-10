@@ -2,6 +2,10 @@ import Profile from '@/components/Profile';
 import React from 'react';
 
 const TITLE_CLASS = 'text-2xl font-bold text-gray-800 my-2';
+export const metadata = {
+  title: 'About Me',
+  description: 'DevSik 커리어 소개',
+};
 
 export default function AboutPage() {
   return (
