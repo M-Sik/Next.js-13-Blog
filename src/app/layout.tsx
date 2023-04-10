@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={sans.className}>
       {/* <meta name="naver-site-verification" content="a0f90629cc177872e597b95fe41df907956e5dff" /> */}
-      <body className="flex flex-col w-full max-w-screen-2xl mx-auto">
+      <body className="flex flex-col w-full max-w-screen-xl mx-auto">
         <Header />
         <main className="grow">{children}</main>
         <Footer />

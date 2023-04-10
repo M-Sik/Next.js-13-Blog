@@ -13,9 +13,9 @@ const nextConfig = {
     ],
   },
   // ssg 정적 빌드를 위한 설정
-  output: 'export',
-  // trailingSlash: true,
+  // output: 'export',
   // distDir: 'dist',
+  // trailingSlash: true,
   // assetPrefix: '.',
 };
 

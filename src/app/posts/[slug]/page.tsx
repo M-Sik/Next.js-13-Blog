@@ -2,6 +2,7 @@ import { getPostData } from '@/api/posts';
 import React from 'react';
 import Image from 'next/image';
 import PostContent from '@/components/PostContent';
+import AdjacentPostCard from '@/components/AdjacentPostCard';
 
 interface IProps {
   params: {
@@ -20,7 +21,7 @@ export function generateMetadata({ params }: IProps) {
 
 export default async function PostPage({ params: { slug } }: IProps) {
   const post = await getPostData(slug);
-  const { title, path } = post;
+  const { title, path, next, prev } = post;
 
   return (
     <article className="rounded-2xl overflow-hidden bg-gray-200 shadow-lg m-4">
@@ -32,6 +33,10 @@ export default async function PostPage({ params: { slug } }: IProps) {
         alt={title}
       />
       <PostContent post={post} />
+      <section className="flex shadow-md">
+        {prev && <AdjacentPostCard post={prev} type="prev"></AdjacentPostCard>}
+        {next && <AdjacentPostCard post={next} type="next"></AdjacentPostCard>}
+      </section>
     </article>
   );
 }
